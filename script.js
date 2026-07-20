@@ -12,3 +12,7 @@ function normalizeTime() {
         "; Secure" +
         "; SameSite=Lax";
 }
+
+document.getElementById("shadow").onclick = function () {
+        location.href = "./shadow";
+    };
