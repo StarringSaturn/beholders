@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+}
+.homegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-columns: repeat(3, 200px);
+    place-content:center;
+}
+.risibutton {
+    background-image: var(--risi);
+    background-size: cover;
+    background-position: center;
+    height:300px;
+    width:200px;
+    position:relative;
+    z-index:3;
+}
+
+@keyframes twinkle{
+    from {background-position:0 0;}
+    to {background-position: -10000px 5000px}
+}
+.stars,.twinkling{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block
+}
+.stars {
+    background: #030104 url(images/stars.png) repeat top center;
+    z-index: 0;
+}
+
+.twinkling{
+    background: transparent url(images/twinkling.png) repeat top center;
+           z-index:1;
+           animation:twinkle 200s linear infinite
+}
+h1 {
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    background: -webkit-linear-gradient(#bf00f4, #280af9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
