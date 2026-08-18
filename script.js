@@ -14,5 +14,11 @@ function normalizeTime() {
 }
 
 document.getElementById("shadow").onclick = function () {
-        location.href = "./shadow";
+    location.href = "./shadow";
+    normalizeTime();
     };
+
+document.getElementById("mainTitle").addEventListener("click", () => {
+        document.getElementById("homegrid").style.visibility = "visible";
+        document.getElementById("mainTitle").style.visibility = "collapse";
+    });

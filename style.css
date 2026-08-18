@@ -2,12 +2,21 @@
     margin:0;
     padding:0;
 }
-.homegrid {
+.homegrid,.pagegrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     grid-template-columns: repeat(3, 200px);
     place-content:center;
+    max-height: 100%;
+    visibility:visible;
+}
+.pagegrid.collapsed,familyInfo.collapsed{
+    max-height: 0px;
+    visibility:collapse;
+}
+.homegrid {
+    visibility: collapse;
 }
 .risibutton {
     background-image: var(--risi);
@@ -20,7 +29,20 @@
     border:none;
     cursor:pointer;
 }
-
+.character {
+    display: flex;
+    padding-bottom:20px;
+    /*justify-content: center;*/
+}
+.characterPic {
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 300px;
+    position: relative;
+    z-index: 3;
+    border: none;
+}
 @keyframes twinkle{
     from {background-position:0 0;}
     to {background-position: -10000px 5000px}
@@ -64,4 +86,17 @@
     top: 0;
     text-align: center;
     align-content: center;
+}
+.familyinfo {
+    position: relative;
+    z-index: 9;
+    background-color: #030104;
+    color: white;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    max-height: 100%;
+    visibility: visible;
+}
+.characterInfo{
+    padding-left:20px;
 }
