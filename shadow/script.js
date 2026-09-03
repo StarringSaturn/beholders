@@ -31,7 +31,7 @@ function fillInFamily(family) {
 }
 function switchDisplay(on) {
     if (!on && alreadyClear) {
-        location.href = "/";
+        location.href = "/beholders";
     }
     else if (on) {
         alreadyClear = false;
