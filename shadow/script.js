@@ -31,7 +31,7 @@ function fillInFamily(family) {
 }
 function switchDisplay(on) {
     if (!on && alreadyClear) {
-        location.href = "./";
+        location.href = "/";
     }
     else if (on) {
         alreadyClear = false;
