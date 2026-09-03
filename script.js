@@ -14,8 +14,8 @@ function normalizeTime() {
 }
 
 document.getElementById("shadow").onclick = function () {
-    location.href = "./shadow";
     normalizeTime();
+    location.href = "./shadow";
     };
 
 document.getElementById("mainTitle").addEventListener("click", () => {

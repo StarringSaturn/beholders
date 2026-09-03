@@ -2,12 +2,13 @@ const families = new Map([["grae", ["rg"]], ["zmei", ["pz"]], ["hexsh", ["eh", "
 const familyInfo = document.getElementById("familyinfo");
 const charInfo = new Map([["rg", ["Rory Grae", "Penelope Zmei", "The Crown", "Such a way with words."]],
     ["pz", ["Penelope Zmei", "Rory Grae", "The Guard", "It's pummeling time."]],
-    ["eh", ["Elias Hexsh", "Penelope Zmei", "The Crown", "Such a way with words."]],
-    ["ch", ["Cameron Hexsh", "Penelope Zmei", "The Crown", "Such a way with words."]],
-    ["eu", ["Emmett Umbris", "Penelope Zmei", "The Crown", "Such a way with words."]],
-    ["ok", ["Oz Kytez", "Penelope Zmei", "The Crown", "Such a way with words."]],
-    ["mk", ["Madyson Kytez", "Penelope Zmei", "The Crown", "Such a way with words."]],
-    ["jk", ["Joy Kytez", "Penelope Zmei", "The Crown", "Such a way with words."]]])
+    ["eh", ["Elias Hexsh", "PJ Axel", "The Reason", "Such a way with words."]],
+    ["ch", ["Cameron Hexsh", "Milo Reign", "The Challenge", "Such a way with words."]],
+    ["eu", ["Emmett Umbris", "Vega Lurre", "The Steady", "Such a way with words."]],
+    ["ok", ["Oz Kytez", "Szymae Ichtamor", "The Regret", "Such a way with words."]],
+    ["mk", ["Madyson Kytez", "Ajax Theodan", "The Quiet", "Such a way with words."]],
+    ["jk", ["Joy Kytez", "Melanie Fluv", "The Vengeance", "Such a way with words."]]])
+let alreadyClear = true;
 function clear(){
     familyInfo.innerHTML = ``;
 }
@@ -28,7 +29,16 @@ function fillInFamily(family) {
         </div>`;
     }
 }
-function switchDisplay (on) {
+function switchDisplay(on) {
+    if (!on && alreadyClear) {
+        location.href = "./";
+    }
+    else if (on) {
+        alreadyClear = false;
+    }
+    else if (!on) {
+        alreadyClear = true;
+    }
         familyInfo.classList.toggle("collapsed");
         document.getElementById("pagegrid").classList.toggle("collapsed");
 }
