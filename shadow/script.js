@@ -1,30 +1,50 @@
 const families = new Map([["grae", ["rg"]], ["zmei", ["pz"]], ["hexsh", ["eh", "ch"]], ["umbris", ["eu"]], ["kytez", ["ok", "mk", "jk"]]]);
+const familyNameDef = new Map([["grae", "foundational, origin"], ["zmei", "the grand serpent, duality"], ["hexsh", "impenetrable, impeding"], ["umbris", "imperceptible, true shadow, guard"], ["kytez", "lost and found, magic's hand"]]);
 const familyInfo = document.getElementById("familyinfo");
-const charInfo = new Map([["rg", ["Rory Grae", "Penelope Zmei", "The Crown", "Such a way with words."]],
-    ["pz", ["Penelope Zmei", "Rory Grae", "The Guard", "It's pummeling time."]],
-    ["eh", ["Elias Hexsh", "PJ Axel", "The Reason", "Such a way with words."]],
-    ["ch", ["Cameron Hexsh", "Milo Reign", "The Challenge", "Such a way with words."]],
-    ["eu", ["Emmett Umbris", "Vega Lurre", "The Steady", "Such a way with words."]],
-    ["ok", ["Oz Kytez", "Szymae Ichtamor", "The Regret", "Such a way with words."]],
-    ["mk", ["Madyson Kytez", "Ajax Theodan", "The Quiet", "Such a way with words."]],
-    ["jk", ["Joy Kytez", "Melanie Fluv", "The Vengeance", "Such a way with words."]]])
+const charInfo = new Map([["rg", ["Rory", "sweetened grace","she/her","Penelope Zmei", "Trusted Leader", "The Shadow's favorite."]],
+    ["pz", ["Penelope", "eternal, persisting", "she/her","Rory Grae", "Guard", "Harsh violent streak, avoid at all costs."]],
+    ["eh", ["Elias", "ushering peace", "he/him", "PJ Axel", "Record Keeper", "Knows where the general population frequent."]],
+    ["ch", ["Cameron", "ushering progress", "he/him", "Milo Reign", "Beastkeeper", "Explosive personality."]],
+    ["eu", ["Emmett", "grounded, centric", "he/him", "Vega Lurre", "Baker", "False life."]],
+    ["ok", ["Oz", "a storm's end, relief", "he/him", "Szymae Ichtamor", "Observer", "As fragile as they come."]],
+    ["mk", ["Madyson", "the encouraging reprieve", "she/her", "Ajax Theodan", "Meeting Planner", "Encourages peace, incredibly fragile."]],
+    ["jk", ["Joy", "comforting happiness, woe's release", "she/her", "Melanie Fluv", "Event Planner", "Keeps things light for the sake of her sister."]],
+    ["di", ["Dusk Inizio", "", "she/her", "Rory Grae", "The Blinding Serpent", ""]]])
 let alreadyClear = true;
+let toggled = false;
+let time = document.cookie.split('time=dusk;');
 function clear(){
     familyInfo.innerHTML = ``;
 }
 function fillInFamily(family) {
     currentFamily = families.get(family);
     clear();
+    if (family == "zmei") {
+        if (!time.includes("time=norm")) {
+            currentFamily = ["di"];
+            if (!toggled) {
+                document.getElementById("zeonaTitle").classList.toggle("cannotSee");
+                toggled = true;
+            }
+        }
+        console.log(time);
+    }
+    else if (!time.includes("time=norm")&&toggled) {
+        document.getElementById("zeonaTitle").classList.toggle("cannotSee");
+        toggled = false;
+    }
+    familyInfo.innerHTML += `<h1 style="text-align:center">${family.toUpperCase()} - ${familyNameDef.get(family)}</h1>`
     for (let i = 0; i < currentFamily.length; i++) {
         let thisChar = currentFamily[i];
         let thisCharInfo = charInfo.get(thisChar);
         familyInfo.innerHTML += `<div id="character" class="character">
             <img class="characterPic" style="background-image:url('images/GOLD${thisChar}.png');"/>
             <div class="characterInfo">
-                <p>Name: ${thisCharInfo[0]}</p>
-                <p>Soulbound: ${thisCharInfo[1]}</p>
-                <p>Occupation: ${thisCharInfo[2]}</p>
-                <p>Known Abilities: ${thisCharInfo[3]}</p>
+                <p>Name: ${thisCharInfo[0]}, Meaning: ${thisCharInfo[1]} </p>
+                <p>Pronouns: ${thisCharInfo[2]}</p>
+                <p>Soulbound: ${thisCharInfo[3]}</p>
+                <p>Occupation: ${thisCharInfo[4]}</p>
+                <p>Known Power: ${thisCharInfo[5]}</p>
             </div>
         </div>`;
     }

@@ -91,6 +91,9 @@
     text-align: center;
     align-content: center;
 }
+.zeonaTitle.cannotSee{
+    background-image:url(error);
+}
 .familyinfo {
     position: relative;
     z-index: 9;
