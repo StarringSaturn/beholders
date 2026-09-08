@@ -18,7 +18,27 @@ document.getElementById("shadow").onclick = function () {
     location.href = "./shadow";
     };
 
-document.getElementById("mainTitle").addEventListener("click", () => {
-        document.getElementById("homegrid").style.visibility = "visible";
-        document.getElementById("mainTitle").style.visibility = "collapse";
-    });
+document.getElementById("all-knowing").onclick = function () {
+    location.href = "./all-knowing";
+};
+document.getElementById("spectacle").onclick = function () {
+    location.href = "./spectacle";
+};
+document.getElementById("adapting").onclick = function () {
+    location.href = "./adapting";
+};
+document.getElementById("hunter").onclick = function () {
+    location.href = "./hunter";
+};
+document.getElementById("whisper").onclick = function () {
+    location.href = "./whisper";
+};
+document.getElementById("truth").onclick = function () {
+    location.href = "./truth";
+};
+document.getElementById("berserk").onclick = function () {
+    location.href = "./berserk";
+};
+document.getElementById("mimic").onclick = function () {
+    location.href = "./mimic";
+};

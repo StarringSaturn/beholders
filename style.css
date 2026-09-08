@@ -18,9 +18,6 @@
     max-height: 0px;
     visibility: collapse;
 }
-.homegrid {
-    visibility: collapse;
-}
 .risibutton {
     background-image: var(--risi);
     background-size: cover;
@@ -95,8 +92,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-.zeonaTitle {
-    background-image: url(images/ShadowScreen.png);
+.risiTitle {
+    background-image: var(--risi);
     height: 300px;
     background-position-y: center;
     background-size: cover;
@@ -105,9 +102,9 @@
     top: 0;
     text-align: center;
     align-content: center;
-    cursor:pointer;
+    cursor: pointer;
 }
-.zeonaTitle.cannotSee{
+.risiTitle.cannotSee{
     background-image:url(error);
 }
 .familyinfo {
