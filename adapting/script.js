@@ -1,15 +1,11 @@
-const families = new Map([["grae", ["rg"]], ["zmei", ["pz"]], ["hexsh", ["eh", "ch"]], ["umbris", ["eu"]], ["kytez", ["ok", "mk", "jk"]]]);
-const familyNameDef = new Map([["grae", "foundational, origin"], ["zmei", "the grand serpent, duality"], ["hexsh", "impenetrable, impeding"], ["umbris", "imperceptible, true shadow, guard"], ["kytez", "lost and found, magic's hand"]]);
+const families = new Map([["jairo", ["rj","sj"]], ["cavox", ["cc"]], ["nightfell", ["dn", "ln"]]]);
+const familyNameDef = new Map([["jairo", ""], ["cavox", ""], ["nightfell", ""]]);
 const familyInfo = document.getElementById("familyinfo");
-const charInfo = new Map([["rg", ["Rory", "sweetened grace","she/her","Penelope Zmei", "Trusted Leader", "The Shadow's favorite."]],
-    ["pz", ["Penelope", "eternal, persisting", "she/her","Rory Grae", "Guard", "Harsh violent streak, avoid at all costs."]],
-    ["eh", ["Elias", "ushering peace", "he/him", "PJ Axel", "Record Keeper", "Knows where the general population frequent."]],
-    ["ch", ["Cameron", "ushering progress", "he/him", "Milo Reign", "Beastkeeper", "Explosive personality."]],
-    ["eu", ["Emmett", "grounded, centric", "he/him", "Vega Lurre", "Baker", "False life."]],
-    ["ok", ["Oz", "a storm's end, relief", "he/him", "Szymae Ichtamor", "Observer", "As fragile as they come."]],
-    ["mk", ["Madyson", "the encouraging reprieve", "she/her", "Ajax Theodan", "Meeting Planner", "Encourages peace, incredibly fragile."]],
-    ["jk", ["Joy", "comforting happiness, woe's release", "she/her", "Melanie Fluv", "Event Planner", "Keeps things light for the sake of her sister."]],
-    ["di", ["Dusk Inizio", "", "she/her", "Rory Grae", "The Blinding Serpent", ""]]])
+const charInfo = new Map([["rj", ["Riley", "sweetened grace","he/him","Penelope Zmei", "Trusted Leader", "The Shadow's favorite."]],
+    ["sj", ["Starlette", "eternal, persisting", "she/her","Rory Grae", "Guard", "Harsh violent streak, avoid at all costs."]],
+    ["cc", ["Cadence", "ushering peace", "she/her", "PJ Axel", "Record Keeper", "Knows where the general population frequent."]],
+    ["dn", ["Delilah", "ushering progress", "she/her", "Milo Reign", "Beastkeeper", "Explosive personality."]],
+    ["ln", ["Luna", "grounded, centric", "she/her", "Vega Lurre", "Baker", "False life."]]])
 let alreadyClear = true;
 let toggled = false;
 let time = document.cookie.split('time=dusk;');
@@ -19,26 +15,12 @@ function clear(){
 function fillInFamily(family) {
     currentFamily = families.get(family);
     clear();
-    if (family == "zmei") {
-        if (!time.includes("time=norm")) {
-            currentFamily = ["di"];
-            if (!toggled) {
-                document.getElementById("risiTitle").classList.toggle("cannotSee");
-                toggled = true;
-            }
-        }
-        console.log(time);
-    }
-    else if (!time.includes("time=norm")&&toggled) {
-        document.getElementById("risiTitle").classList.toggle("cannotSee");
-        toggled = false;
-    }
     familyInfo.innerHTML += `<h1 style="text-align:center">${family.toUpperCase()} - ${familyNameDef.get(family)}</h1>`
     for (let i = 0; i < currentFamily.length; i++) {
         let thisChar = currentFamily[i];
         let thisCharInfo = charInfo.get(thisChar);
         familyInfo.innerHTML += `<div id="character" class="character">
-            <img class="characterPic" style="background-image:url('images/GOLD${thisChar}.png');"/>
+            <img class="characterPic" style="background-image:url('images/AMBER${thisChar}.png');"/>
             <div class="characterInfo">
                 <p>Name: ${thisCharInfo[0]}, Meaning: ${thisCharInfo[1]} </p>
                 <p>Pronouns: ${thisCharInfo[2]}</p>
@@ -66,23 +48,15 @@ document.getElementById("risiTitle").addEventListener("click", () => {
     clear();
     switchDisplay(false);
 });
-document.getElementById("grae").addEventListener("click", () => {
-    fillInFamily("grae");
+document.getElementById("jairo").addEventListener("click", () => {
+    fillInFamily("jairo");
     switchDisplay(true);
 });
-document.getElementById("zmei").addEventListener("click", () => {
-    fillInFamily("zmei");
+document.getElementById("cavox").addEventListener("click", () => {
+    fillInFamily("cavox");
     switchDisplay(true);
 });
-document.getElementById("hexsh").addEventListener("click", () => {
-    fillInFamily("hexsh");
-    switchDisplay(true);
-});
-document.getElementById("umbris").addEventListener("click", () => {
-    fillInFamily("umbris");
-    switchDisplay(true);
-});
-document.getElementById("kytez").addEventListener("click", () => {
-    fillInFamily("kytez");
+document.getElementById("nightfell").addEventListener("click", () => {
+    fillInFamily("nightfell");
     switchDisplay(true);
 });
