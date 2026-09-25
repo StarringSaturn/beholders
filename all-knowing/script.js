@@ -1,4 +1,4 @@
-const families = new Map([["radia", ["or,rr,ar"]], ["lurre", ["rl,cl,vl"]], ["pani", ["ep"]]]);
+const families = new Map([["radia", ["or","rr","ar"]], ["lurre", ["rl","cl","vl"]], ["pani", ["ep"]]]);
 const familyNameDef = new Map([["radia", "the first sun, the persisting sun"], ["lurre", "observing all, above all"], ["pani", "disillusioned, painless"]]);
 const familyInfo = document.getElementById("familyinfo");
 const charInfo = new Map([["or", ["Odysseus", "the crashing and settling wave","he/him","Venus Rogue", "Clothing designer, tailor", "Able to interpret one's dreams and aspirations. Some report feeling more...self-aware around him."]],
