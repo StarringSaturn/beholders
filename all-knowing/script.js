@@ -1,15 +1,13 @@
-const families = new Map([["grae", ["rg"]], ["zmei", ["pz"]], ["hexsh", ["eh", "ch"]], ["umbris", ["eu"]], ["kytez", ["ok", "mk", "jk"]]]);
-const familyNameDef = new Map([["grae", "foundational, origin"], ["zmei", "the grand serpent, duality"], ["hexsh", "impenetrable, impeding"], ["umbris", "imperceptible, true shadow, guard"], ["kytez", "lost and found, magic's hand"]]);
+const families = new Map([["radia", ["or,rr,ar"]], ["lurre", ["rl,cl,vl"]], ["pani", ["ep"]]]);
+const familyNameDef = new Map([["radia", "the first sun, the persisting sun"], ["lurre", "observing all, above all"], ["pani", "disillusioned, painless"]]);
 const familyInfo = document.getElementById("familyinfo");
-const charInfo = new Map([["rg", ["Rory", "sweetened grace","she/her","Penelope Zmei", "Trusted Leader", "The Shadow's favorite."]],
-    ["pz", ["Penelope", "eternal, persisting", "she/her","Rory Grae", "Guard", "Harsh violent streak, avoid at all costs."]],
-    ["eh", ["Elias", "ushering peace", "he/him", "PJ Axel", "Record Keeper", "Knows where the general population frequent."]],
-    ["ch", ["Cameron", "ushering progress", "he/him", "Milo Reign", "Beastkeeper", "Explosive personality."]],
-    ["eu", ["Emmett", "grounded, centric", "he/him", "Vega Lurre", "Baker", "False life."]],
-    ["ok", ["Oz", "a storm's end, relief", "he/him", "Szymae Ichtamor", "Observer", "As fragile as they come."]],
-    ["mk", ["Madyson", "the encouraging reprieve", "she/her", "Ajax Theodan", "Meeting Planner", "Encourages peace, incredibly fragile."]],
-    ["jk", ["Joy", "comforting happiness, woe's release", "she/her", "Melanie Fluv", "Event Planner", "Keeps things light for the sake of her sister."]],
-    ["di", ["Dusk Inizio", "", "she/her", "Rory Grae", "The Blinding Serpent", ""]]])
+const charInfo = new Map([["or", ["Odysseus", "the crashing and settling wave","he/him","Venus Rogue", "Clothing designer, tailor", "Able to interpret one's dreams and aspirations. Some report feeling more...self-aware around him."]],
+    ["rr", ["Rhayne", "harbinger of storms, downpour", "she/her","Amara Radia", "Head of Security", "Daydreams are not out of her perception, all rely on her to reach a dream's meaning."]],
+    ["ar", ["Amara", "dream walker, night's shaper", "she/her", "Rhayne Radia", "Investigator", "Knows what haunts a shade, the fleshed-out nightmare."]],
+    ["rl", ["Rigel", "leave an impression, unforgettable", "he/him", "Xavier Theodan", "Observer, Relayer of Messages", "Knowledgeable of the goings-on, especially within Sija, though he's privy to information that extends past the borders."]],
+    ["cl", ["Casey", "successful, to one's benefit", "she/her", "Orion Waltz", "Handler of Relations", "Hearts wish to sing for her. She is relief from guilt."]],
+    ["vl", ["Vega", "rare, fascination, muse", "she/her", "Emmett Umbris", "Writer", "Her information moves so quickly that she has to write it down to retain most of it."]],
+    ["ep", ["Ellise", "light on their feet, drifter", "she/her", "Draven Fluv", "Communications", "Can tell anyone who their soulbound is."]]])
 let alreadyClear = true;
 let toggled = false;
 let time = document.cookie.split('time=dusk;');
@@ -19,26 +17,12 @@ function clear(){
 function fillInFamily(family) {
     currentFamily = families.get(family);
     clear();
-    if (family == "zmei") {
-        if (!time.includes("time=norm")) {
-            currentFamily = ["di"];
-            if (!toggled) {
-                document.getElementById("risiTitle").classList.toggle("cannotSee");
-                toggled = true;
-            }
-        }
-        console.log(time);
-    }
-    else if (!time.includes("time=norm")&&toggled) {
-        document.getElementById("risiTitle").classList.toggle("cannotSee");
-        toggled = false;
-    }
     familyInfo.innerHTML += `<h1 style="text-align:center">${family.toUpperCase()} - ${familyNameDef.get(family)}</h1>`
     for (let i = 0; i < currentFamily.length; i++) {
         let thisChar = currentFamily[i];
         let thisCharInfo = charInfo.get(thisChar);
         familyInfo.innerHTML += `<div id="character" class="character">
-            <img class="characterPic" style="background-image:url('images/GOLD${thisChar}.png');"/>
+            <img class="characterPic" style="background-image:url('images/YELLOW${thisChar}.png');"/>
             <div class="characterInfo">
                 <p>Name: ${thisCharInfo[0]}, Meaning: ${thisCharInfo[1]} </p>
                 <p>Pronouns: ${thisCharInfo[2]}</p>
@@ -66,23 +50,15 @@ document.getElementById("risiTitle").addEventListener("click", () => {
     clear();
     switchDisplay(false);
 });
-document.getElementById("grae").addEventListener("click", () => {
-    fillInFamily("grae");
+document.getElementById("radia").addEventListener("click", () => {
+    fillInFamily("radia");
     switchDisplay(true);
 });
-document.getElementById("zmei").addEventListener("click", () => {
-    fillInFamily("zmei");
+document.getElementById("lurre").addEventListener("click", () => {
+    fillInFamily("lurre");
     switchDisplay(true);
 });
-document.getElementById("hexsh").addEventListener("click", () => {
-    fillInFamily("hexsh");
-    switchDisplay(true);
-});
-document.getElementById("umbris").addEventListener("click", () => {
-    fillInFamily("umbris");
-    switchDisplay(true);
-});
-document.getElementById("kytez").addEventListener("click", () => {
-    fillInFamily("kytez");
+document.getElementById("pani").addEventListener("click", () => {
+    fillInFamily("pani");
     switchDisplay(true);
 });
