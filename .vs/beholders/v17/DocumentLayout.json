@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\beholders\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\all-knowing\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:all-knowing\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\whisper\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:whisper\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\hunter\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hunter\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\hunter\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hunter\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\spectacle\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:spectacle\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\adapting\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:adapting\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\shadow\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -21,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\beholders\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -44,18 +60,70 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "script.js",
-              "DocumentMoniker": "D:\\beholders\\all-knowing\\script.js",
-              "RelativeDocumentMoniker": "all-knowing\\script.js",
-              "ToolTip": "D:\\beholders\\all-knowing\\script.js",
-              "RelativeToolTip": "all-knowing\\script.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABFAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\beholders\\whisper\\script.js",
+              "RelativeDocumentMoniker": "whisper\\script.js",
+              "ToolTip": "D:\\beholders\\whisper\\script.js",
+              "RelativeToolTip": "whisper\\script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-09-25T01:05:49.916Z",
+              "WhenOpened": "2026-09-28T22:36:43.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\beholders\\hunter\\index.html",
+              "RelativeDocumentMoniker": "hunter\\index.html",
+              "ToolTip": "D:\\beholders\\hunter\\index.html",
+              "RelativeToolTip": "hunter\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-09-28T22:18:55.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "script.js",
+              "DocumentMoniker": "D:\\beholders\\hunter\\script.js",
+              "RelativeDocumentMoniker": "hunter\\script.js",
+              "ToolTip": "D:\\beholders\\hunter\\script.js",
+              "RelativeToolTip": "hunter\\script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-28T22:16:12.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "script.js",
+              "DocumentMoniker": "D:\\beholders\\adapting\\script.js",
+              "RelativeDocumentMoniker": "adapting\\script.js",
+              "ToolTip": "D:\\beholders\\adapting\\script.js",
+              "RelativeToolTip": "adapting\\script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAACSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-28T22:01:42.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "script.js",
+              "DocumentMoniker": "D:\\beholders\\spectacle\\script.js",
+              "RelativeDocumentMoniker": "spectacle\\script.js",
+              "ToolTip": "D:\\beholders\\spectacle\\script.js",
+              "RelativeToolTip": "spectacle\\script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-28T21:33:40.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "index.html",
               "DocumentMoniker": "D:\\beholders\\all-knowing\\index.html",
               "RelativeDocumentMoniker": "all-knowing\\index.html",
@@ -63,12 +131,11 @@
               "RelativeToolTip": "all-knowing\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-09-25T01:05:43.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-25T01:05:43.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "script.js",
               "DocumentMoniker": "D:\\beholders\\shadow\\script.js",
               "RelativeDocumentMoniker": "shadow\\script.js",
@@ -76,12 +143,11 @@
               "RelativeToolTip": "shadow\\script.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-09-25T00:51:15.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-25T00:51:15.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "index.html",
               "DocumentMoniker": "D:\\beholders\\shadow\\index.html",
               "RelativeDocumentMoniker": "shadow\\index.html",
@@ -89,12 +155,11 @@
               "RelativeToolTip": "shadow\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-07-20T02:32:09.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-20T02:32:09.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "script.js",
               "DocumentMoniker": "D:\\beholders\\script.js",
               "RelativeDocumentMoniker": "script.js",
@@ -102,8 +167,7 @@
               "RelativeToolTip": "script.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-16T03:20:08.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-16T03:20:08.792Z"
             },
             {
               "$type": "Document",
@@ -113,14 +177,14 @@
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "D:\\beholders\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-07-16T03:19:50.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "index.html",
               "DocumentMoniker": "D:\\beholders\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -128,8 +192,7 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-07-16T03:19:40.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-16T03:19:40.856Z"
             }
           ]
         }
