@@ -1,15 +1,14 @@
-const families = new Map([["grae", ["rg"]], ["zmei", ["pz"]], ["hexsh", ["eh", "ch"]], ["umbris", ["eu"]], ["kytez", ["ok", "mk", "jk"]]]);
-const familyNameDef = new Map([["grae", "foundational, origin"], ["zmei", "the grand serpent, duality"], ["hexsh", "impenetrable, impeding"], ["umbris", "imperceptible, true shadow, guard"], ["kytez", "lost and found, magic's hand"]]);
+const families = new Map([["hellion", ["dh","rh","ah","ch"]], ["divv", ["cd","vd"]], ["axel", ["na", "pa"]]]);
+const familyNameDef = new Map([["hellion", "life's keepers, safety, security"], ["divv", "the lacking effect of fear in the face of their courage"], ["axel", "the altruists, seeking for answers"]]);
 const familyInfo = document.getElementById("familyinfo");
-const charInfo = new Map([["rg", ["Rory", "sweetened grace","she/her","Penelope Zmei", "Trusted Leader", "The Shadow's favorite."]],
-    ["pz", ["Penelope", "eternal, persisting", "she/her","Rory Grae", "Guard", "Harsh violent streak, avoid at all costs."]],
-    ["eh", ["Elias", "ushering peace", "he/him", "PJ Axel", "Record Keeper", "Knows where the general population frequent."]],
-    ["ch", ["Cameron", "ushering progress", "he/him", "Milo Reign", "Beastkeeper", "Explosive personality."]],
-    ["eu", ["Emmett", "grounded, centric", "he/him", "Vega Lurre", "Baker", "False life."]],
-    ["ok", ["Oz", "a storm's end, relief", "he/him", "Szymae Ichtamor", "Observer", "As fragile as they come."]],
-    ["mk", ["Madyson", "the encouraging reprieve", "she/her", "Ajax Theodan", "Meeting Planner", "Encourages peace, incredibly fragile."]],
-    ["jk", ["Joy", "comforting happiness, woe's release", "she/her", "Melanie Fluv", "Event Planner", "Keeps things light for the sake of her sister."]],
-    ["di", ["Dusk Inizio", "", "she/her", "Rory Grae", "The Blinding Serpent", ""]]])
+const charInfo = new Map([["dh", ["Dean", "nature's healer, the natural adaptation","he/him","Vesper Rogue", "Caretaker, Doctor", "Soothsayer, healing through speaking to someone."]],
+    ["rh", ["River", "nature's resting place, the natural flow", "she/her","Roren Mazen", "Beastkeeper, Nature's Right Hand", "Genuine understanding pulses from her, even those who run hot are chilled by her proximity."]],
+    ["ah", ["Angel", "nature's speaker, the natural inclination towards peace", "she/her/they", "Charlie Hellion", "Courier", "Hears from nature, its beasts, and her fellow shade all the same."]],
+    ["ch", ["Charlie", "nature's spirit, nature's response", "she/her", "Angel Hellion", "Parkour, Entertainment", "Calms those that are believed too far gone, too lost."]],
+    ["cd", ["Cal", "rambunctious, unfettered", "he/him", "Cadel Trenton", "Mortician", "Whispers seek him out, they need to be heard."]],
+    ["vd", ["Vextry", "freeing, disquieting", "she/her", "Kyla Aster", "Keeper", "The safest place for information to be stored."]],
+    ["na", ["Nala", "mellow, refining, polishing", "she/her", "Aileen Blais", "Diviner", "Easy to talk to, even for the least trusting of individuals."]],
+    ["pa", ["PJ", "magnificent, fixation, shortened name of the second sun (Pixei l'Jieva) and the flowers that wake under its light (pixie jays)", "she/her", "Elias Hexsh", "Diviner", "Takes injuries in the place of others, transmit mental messages if the intended-receiver is open to it."]]])
 let alreadyClear = true;
 let toggled = false;
 let time = document.cookie.split('time=dusk;');
@@ -19,26 +18,12 @@ function clear(){
 function fillInFamily(family) {
     currentFamily = families.get(family);
     clear();
-    if (family == "zmei") {
-        if (!time.includes("time=norm")) {
-            currentFamily = ["di"];
-            if (!toggled) {
-                document.getElementById("risiTitle").classList.toggle("cannotSee");
-                toggled = true;
-            }
-        }
-        console.log(time);
-    }
-    else if (!time.includes("time=norm")&&toggled) {
-        document.getElementById("risiTitle").classList.toggle("cannotSee");
-        toggled = false;
-    }
     familyInfo.innerHTML += `<h1 style="text-align:center">${family.toUpperCase()} - ${familyNameDef.get(family)}</h1>`
     for (let i = 0; i < currentFamily.length; i++) {
         let thisChar = currentFamily[i];
         let thisCharInfo = charInfo.get(thisChar);
         familyInfo.innerHTML += `<div id="character" class="character">
-            <img class="characterPic" style="background-image:url('images/GOLD${thisChar}.png');"/>
+            <img class="characterPic" style="background-image:url('images/PURPLE${thisChar}.png');"/>
             <div class="characterInfo">
                 <p>Name: ${thisCharInfo[0]}, Meaning: ${thisCharInfo[1]} </p>
                 <p>Pronouns: ${thisCharInfo[2]}</p>
@@ -66,23 +51,15 @@ document.getElementById("risiTitle").addEventListener("click", () => {
     clear();
     switchDisplay(false);
 });
-document.getElementById("grae").addEventListener("click", () => {
-    fillInFamily("grae");
+document.getElementById("hellion").addEventListener("click", () => {
+    fillInFamily("hellion");
     switchDisplay(true);
 });
-document.getElementById("zmei").addEventListener("click", () => {
-    fillInFamily("zmei");
+document.getElementById("divv").addEventListener("click", () => {
+    fillInFamily("divv");
     switchDisplay(true);
 });
-document.getElementById("hexsh").addEventListener("click", () => {
-    fillInFamily("hexsh");
-    switchDisplay(true);
-});
-document.getElementById("umbris").addEventListener("click", () => {
-    fillInFamily("umbris");
-    switchDisplay(true);
-});
-document.getElementById("kytez").addEventListener("click", () => {
-    fillInFamily("kytez");
+document.getElementById("axel").addEventListener("click", () => {
+    fillInFamily("axel");
     switchDisplay(true);
 });

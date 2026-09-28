@@ -1,11 +1,11 @@
 const families = new Map([["jairo", ["rj","sj"]], ["cavox", ["cc"]], ["nightfell", ["dn", "ln"]]]);
-const familyNameDef = new Map([["jairo", ""], ["cavox", ""], ["nightfell", ""]]);
+const familyNameDef = new Map([["jairo", "seamless, reliable, focus"], ["cavox", "the last one standing amidst havoc"], ["nightfell", "the desired end of darkness, an eclipse of evil"]]);
 const familyInfo = document.getElementById("familyinfo");
-const charInfo = new Map([["rj", ["Riley", "sweetened grace","he/him","Penelope Zmei", "Trusted Leader", "The Shadow's favorite."]],
-    ["sj", ["Starlette", "eternal, persisting", "she/her","Rory Grae", "Guard", "Harsh violent streak, avoid at all costs."]],
-    ["cc", ["Cadence", "ushering peace", "she/her", "PJ Axel", "Record Keeper", "Knows where the general population frequent."]],
-    ["dn", ["Delilah", "ushering progress", "she/her", "Milo Reign", "Beastkeeper", "Explosive personality."]],
-    ["ln", ["Luna", "grounded, centric", "she/her", "Vega Lurre", "Baker", "False life."]]])
+const charInfo = new Map([["rj", ["Riley", "willpower, instilled confidence","he/him","Skylar Heroux", "Educator in Magic", "Adapt power to strike."]],
+    ["sj", ["Starlette", "power that transcends the world, bled into her", "she/her","Isaac Reign", "Advisor, Witch", "Adapt power to last."]],
+    ["cc", ["Cadence", "warrior, ever-enduring", "she/her", "Bizzy Fluv", "Commander", "Adapt to the environment, weather the conditions."]],
+    ["dn", ["Delilah", "the search for more", "she/her", "Jack Aster", "Tavernkeeper", "She's quite forgettable in a crowd."]],
+    ["ln", ["Luna", "with the moons' persistence, delight at the most alarming hours", "she/her", "Agile Flint", "Tavernkeeper", "Easy to talk to."]]])
 let alreadyClear = true;
 let toggled = false;
 let time = document.cookie.split('time=dusk;');

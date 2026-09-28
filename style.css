@@ -11,6 +11,9 @@
     max-height: 100%;
     visibility:visible;
 }
+.meta{
+    display:none;
+}
 .emblemgrid {
     grid-template-columns: repeat(3, 300px);
 }
