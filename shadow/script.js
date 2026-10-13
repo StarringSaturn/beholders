@@ -1,5 +1,5 @@
 const families = new Map([["grae", ["rg"]], ["zmei", ["pz"]], ["hexsh", ["eh", "ch"]], ["umbris", ["eu"]], ["kytez", ["ok", "mk", "jk"]]]);
-const familyNameDef = new Map([["grae", "foundational, origin"], ["zmei", "the grand serpent, duality"], ["hexsh", "impenetrable, impeding"], ["umbris", "imperceptible, true shadow, guard"], ["kytez", "lost and found, magic's hand"]]);
+const familyNameDef = new Map([["grae", "foundational, origin"], ["zmei", "the grand serpent, duality"], ["hexsh", "impenetrable, impeding"], ["umbris", "imperceptible, true shadow, guard"], ["kytez", "lost and found, magic's hand"], ["inizio", "twisted, coiled beginnings"]]);
 const familyInfo = document.getElementById("familyinfo");
 const charInfo = new Map([["rg", ["Rory", "sweetened grace","she/her","Penelope Zmei", "Trusted Leader", "The Shadow's favorite, even the shadows make room for her light."]],
     ["pz", ["Penelope", "eternal, persisting", "she/her","Rory Grae", "Guard", "Forceful hand, and the shadows extend her powered reach."]],
@@ -22,6 +22,7 @@ function fillInFamily(family) {
     if (family == "zmei") {
         if (!time.includes("time=norm")) {
             currentFamily = ["di"];
+            family = "inizio";
             if (!toggled) {
                 document.getElementById("risiTitle").classList.toggle("cannotSee");
                 toggled = true;

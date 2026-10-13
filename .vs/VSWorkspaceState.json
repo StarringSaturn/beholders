@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\adapting",
     "\\all-knowing",
     "\\berserk",
     "\\hunter",
     "\\mimic",
     "\\shadow",
+    "\\shadow\\oblivion",
     "\\spectacle",
     "\\truth",
     "\\whisper"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\shadow\\oblivion\\index.html",
   "PreviewInSolutionExplorer": false
 }
